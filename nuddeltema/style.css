@@ -1,0 +1,249 @@
+/**
+ * Theme Name:        Nuddel Tema
+ * Theme URI:         https://example.com/fabled-sunset
+ * Description:       Nuddel webshop
+ * Version:           1.0.0
+ * Author:            Jesper
+ * Author URI:        https://example.com
+ * Tags:              block-patterns, full-site-editing
+ * Text Domain:       fabled-sunset
+ * Domain Path:       /assets/lang
+ * Tested up to:      6.4
+ * Requires at least: 6.2
+ * Requires PHP:      7.4
+ * License:           GNU General Public License v2.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+/* Importér Roboto-skrifttypen fra Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+/* Generelle stilarter for hele siden */
+body {
+  background: white;
+  max-width: 1440px;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header Stilarter */
+.header {
+  background-color: #06D6A0;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  align-items: center;
+}
+
+/* Navigationsstilarter */
+.main-nav {
+  text-align: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* Footer Stilarter */
+.footer {
+  background-color: #06D6A0;
+  color: #fff;
+  text-align: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+/* Slider Stilarter */
+
+/* Hero-sektionen der indeholder slideren */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 600px;
+}
+
+/* Container til slideren */
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Enkelt dias i slideren */
+.slide {
+  flex: 0 0 100%;
+  background-position: center;
+  min-height: 600px;
+  background-repeat: no-repeat;
+}
+
+/* Valgfrit: Tilføj stilarter for navigationspil */
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-nav button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Valgfrit: Tilføj stilarter for paginering med prikker */
+.slider-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.slider-pagination button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Produkter */
+
+/* Container for produkter med Flexbox */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* stilarter til produkter */
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  text-align: center;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* overskriften for produktet */
+.product-title {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* indholdet for produktet */
+.product-content {
+  color: #666;
+  font-size: 1em;
+}
+
+/* RECIPES */
+.recipes {
+  max-width: 350px;
+}
+
+.recipe {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.recipe-title {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.recipe-content {
+  line-height: 1.6;
+}
+
+.recipe-header{
+  font-size: 35px;
+  color: #06D6A0;
+  margin-bottom: 20px;
+}
+
+/* Kontaktformularstilarter */
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #06D6A0;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #048561;
+}
+
